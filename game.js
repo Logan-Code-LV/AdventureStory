@@ -7,8 +7,25 @@ if (name !== "") {
 } else {
   alert("See ya..")
 }
+
+var character = prompt(
+  "Choose your character! Type `a` for George Clooney, type `b` for Billie Eilish, type `c` Bernie Sanders"
+)
+
+if (character == `a`) {
+  alert("You are George Clooney!")
+}
+
+if (character == `b`) {
+  alert("You are Billie Eilish!")
+}
+
+if (character == `c`) {
+  alert("You are Bernie Sanders!")
+}
+
 var look = confirm(
-  "You walk into a room. There is a single door off into the corner. Do you want to find out what is behind it?"
+  "You walk into the creepy house. There is a single door way off in the corner. Do you want to find out what is behind it?"
 )
 
 if (look) {
@@ -17,15 +34,13 @@ if (look) {
     "There is a red box and blue box. Press okay to open the red box. Press cancel to open the blue box."
   )
   if (box) {
-    alert("You just found the keys to 10,000 Bitcoin! You WIN!")
+    alert(
+      "The box is booby-trapped! A trap door below you opens. You fall into the Gator pit. TRY AGAIN!"
+    )
   } else {
-    alert("You found an old banana. Try again.")
+    alert("You found an old banana. TRY AGAIN!")
   }
 } else {
-  alert(
-    "You decide to turn the other way, leaving the house, and run back to your car."
-  )
-  alert(
-    "You try to start the car. Realizing it is completely out of gas and oh yeah.. you are completely surrounded by zombies. GAME OVER"
-  )
+  alert("You decide to turn around and leave the haunted house.")
+  alert("Leaving the haunted house was the right idea - YOU WIN!")
 }
